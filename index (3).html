@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kishan Ravikumar — Computer Science Graduate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F1EFE8;
+    --ink:#212529;
+    --ink-soft:#5A6169;
+    --line:#D9D4C8;
+    --indigo:#0D6EFD;
+    --sage:#0D6EFD;
+    --status:#198754;
+    --paper-raised:#E7E3D8;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{color:inherit;}
+
+  ::selection{background:var(--indigo); color:var(--paper);}
+
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  /* ---------- Header / Hero ---------- */
+
+  header.hero{
+    padding:96px 0 64px;
+    border-bottom:1px solid var(--line);
+  }
+
+  .kicker{
+    font-size:14px;
+    color:var(--sage);
+    font-weight:500;
+    margin-bottom:18px;
+    letter-spacing:0.01em;
+  }
+
+  h1.name{
+    font-family:'Fraunces', serif;
+    font-optical-sizing:auto;
+    font-weight:500;
+    font-size:clamp(40px, 7vw, 64px);
+    line-height:1.05;
+    letter-spacing:-0.01em;
+    margin-bottom:22px;
+  }
+
+  .role-line{
+    font-size:19px;
+    color:var(--ink-soft);
+    max-width:56ch;
+    margin-bottom:30px;
+  }
+
+  .role-line strong{
+    color:var(--ink);
+    font-weight:600;
+  }
+
+  .status-line{
+    display:flex;
+    align-items:center;
+    gap:9px;
+    font-size:14px;
+    color:var(--ink-soft);
+    margin-bottom:26px;
+  }
+
+  .status-dot{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:var(--status);
+    flex-shrink:0;
+  }
+
+  .contact-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px 22px;
+    font-size:15px;
+  }
+
+  .contact-row a{
+    text-decoration:none;
+    border-bottom:1px solid var(--line);
+    padding-bottom:1px;
+    transition:border-color 0.15s ease, color 0.15s ease;
+  }
+
+  .contact-row a:hover{
+    border-color:var(--indigo);
+    color:var(--indigo);
+  }
+
+  /* ---------- Section shell ---------- */
+
+  section{
+    padding:56px 0;
+    border-bottom:1px solid var(--line);
+  }
+
+  section:last-of-type{
+    border-bottom:none;
+  }
+
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    margin-bottom:34px;
+    gap:16px;
+  }
+
+  h2{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:26px;
+  }
+
+  .section-note{
+    font-size:14px;
+    color:var(--ink-soft);
+    white-space:nowrap;
+  }
+
+  /* ---------- About ---------- */
+
+  .about p{
+    max-width:62ch;
+    color:var(--ink-soft);
+    font-size:16.5px;
+  }
+
+  .about p + p{
+    margin-top:16px;
+  }
+
+  /* ---------- Projects ---------- */
+
+  .project{
+    padding:26px 0;
+    border-top:1px solid var(--line);
+  }
+
+  .project:first-child{
+    border-top:none;
+    padding-top:0;
+    padding-bottom:34px;
+  }
+
+  .project-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:16px;
+    flex-wrap:wrap;
+    margin-bottom:8px;
+  }
+
+  .project-title{
+    font-size:19px;
+    font-weight:600;
+  }
+
+  .project:first-child .project-title{
+    font-family:'Fraunces', serif;
+    font-size:24px;
+    font-weight:500;
+  }
+
+  .project:first-child .project-desc{
+    font-size:16.5px;
+  }
+
+  .project-links{
+    display:flex;
+    gap:14px;
+    font-size:14px;
+  }
+
+  .project-links a{
+    text-decoration:none;
+    color:var(--indigo);
+    border-bottom:1px solid transparent;
+  }
+
+  .project-links a:hover{
+    border-color:var(--indigo);
+  }
+
+  .project-desc{
+    color:var(--ink-soft);
+    max-width:62ch;
+    font-size:15.5px;
+    margin-bottom:12px;
+  }
+
+  .stack{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    font-size:13px;
+  }
+
+  .stack span{
+    background:var(--paper-raised);
+    color:var(--ink-soft);
+    padding:4px 10px;
+    border-radius:3px;
+  }
+
+  /* ---------- Experience ---------- */
+
+  .job{
+    display:grid;
+    grid-template-columns:140px 1fr;
+    gap:20px;
+    padding:22px 0;
+    border-top:1px solid var(--line);
+  }
+
+  .job:first-child{
+    border-top:none;
+    padding-top:0;
+  }
+
+  .job-when{
+    font-size:14px;
+    color:var(--ink-soft);
+    padding-top:2px;
+  }
+
+  .job-role{
+    font-size:17px;
+    font-weight:600;
+    margin-bottom:2px;
+  }
+
+  .job-org{
+    font-size:15px;
+    color:var(--sage);
+    font-weight:500;
+    margin-bottom:10px;
+  }
+
+  .job-desc{
+    color:var(--ink-soft);
+    font-size:15px;
+    max-width:56ch;
+  }
+
+  /* ---------- Skills ---------- */
+
+  .skill-groups{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+  }
+
+  .skill-group h3{
+    font-size:13px;
+    font-weight:600;
+    color:var(--ink);
+    margin-bottom:6px;
+  }
+
+  .skill-group p{
+    color:var(--ink-soft);
+    font-size:15px;
+    line-height:1.7;
+    max-width:60ch;
+  }
+
+  /* ---------- Footer / Contact ---------- */
+
+  footer{
+    padding:56px 0 90px;
+  }
+
+  footer p{
+    color:var(--ink-soft);
+    max-width:56ch;
+    margin-bottom:22px;
+  }
+
+  .footer-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 22px;
+  }
+
+  .footer-links a{
+    text-decoration:none;
+    font-size:15px;
+    font-weight:500;
+    color:var(--indigo);
+    border-bottom:1px solid var(--line);
+    padding-bottom:2px;
+  }
+
+  .footer-links a:hover{
+    border-color:var(--indigo);
+  }
+
+  .fine-print{
+    margin-top:48px;
+    font-size:13px;
+    color:var(--ink-soft);
+    opacity:0.7;
+  }
+
+  @media (max-width:600px){
+    header.hero{padding:64px 0 44px;}
+    .job{grid-template-columns:1fr; gap:4px;}
+    .skill-groups{grid-template-columns:1fr;}
+    section{padding:44px 0;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="kicker">Portfolio — Class of 2025</div>
+    <h1 class="name">Kishan Ravikumar</h1>
+    <p class="role-line">
+      <strong>Computer Science graduate</strong> (2:1, University of Essex) with experience spanning backend development, data pipelines, and analytics. Open to graduate roles in software engineering or data & analytics.
+    </p>
+    <div class="status-line">
+      <span class="status-dot"></span>
+      Open to full-time roles — available immediately
+    </div>
+    <div class="contact-row">
+      <a href="mailto:kishan.ravikumar@email.com">kishan.ravikumar@email.com</a>
+      <a href="https://github.com/Kishanr19" target="_blank" rel="noopener">github.com/Kishanr19</a>
+      <a href="https://linkedin.com/in/kishanravikumar" target="_blank" rel="noopener">linkedin.com/in/kishanravikumar</a>
+      <a href="/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="section-head">
+      <h2>About</h2>
+    </div>
+    <p>I combine academic and professional experience building automated Python and SQL pipelines, developing backend Java components, and analysing structured data with Excel, Power BI, and Tableau. I'm comfortable translating requirements into clean technical specifications and working within agile workflows using Jira.</p>
+    <p>As a recent graduate, I'm looking to apply this mix of software development and analytical experience — whether that's a graduate software engineering role or one focused on data and reporting.</p>
+  </section>
+
+  <section class="projects">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <div class="section-note">Selected work</div>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <div class="project-title">Commercial & Customer Intelligence Analytics Platform</div>
+        <div class="project-links">
+          <a href="https://github.com/Kishanr19/Commercial-Customer-Intelligence-Analytics-Platform-" target="_blank" rel="noopener">Code</a>
+        </div>
+      </div>
+      <p class="project-desc">A cross-tool analytics portfolio built around real business questions: a relational schema and 20+ SQL queries on bike store sales, an automated Python pipeline pulling S&P 500 options data via API, a logistic regression model predicting employee churn, and Excel/Tableau dashboards covering retail margins and property sales.</p>
+      <div class="stack"><span>PostgreSQL</span><span>Python</span><span>Excel</span><span>Tableau</span></div>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <div class="project-title">Automated Grade Calculation & Validation System</div>
+        <div class="project-links">
+          <a href="https://github.com/Kishanr19/Automated-Grade-Calculation-Validation-System" target="_blank" rel="noopener">Code</a>
+        </div>
+      </div>
+      <p class="project-desc">A Java application built in a 5-person hackathon team that automates peer-assessment processing and grade calculation, separating input validation, processing, and calculation into distinct testable stages. Covered by 10+ unit tests including edge-case scenarios, developed with Git-based version control and CI/CD.</p>
+      <div class="stack"><span>Java</span><span>JUnit</span><span>Git</span><span>CI/CD</span></div>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <div class="project-title">PacRun</div>
+        <div class="project-links">
+          <a href="https://github.com/Kishanr19/PacRun-A-Java-Based-Exploration-of-Object-Oriented-Game-Architecture-with-Advanced-State-Management" target="_blank" rel="noopener">Code</a>
+        </div>
+      </div>
+      <p class="project-desc">A Java reimagining of Pac-Man built with a unified object-oriented entity system, four ghosts each running a distinct targeting algorithm, three power-up mechanics, and a competitive two-player mode. Custom Swing rendering pipeline, no external game engine, with unit tests covering game logic and audio.</p>
+      <div class="stack"><span>Java</span><span>Swing</span><span>OOP Design</span><span>JUnit</span></div>
+    </div>
+  </section>
+
+  <section class="experience">
+    <div class="section-head">
+      <h2>Experience</h2>
+    </div>
+
+    <div class="job">
+      <div class="job-when">Jan 2023 – Jul 2025</div>
+      <div>
+        <div class="job-role">Data and Operations Assistant (Part-time)</div>
+        <div class="job-org">University of Essex</div>
+        <p class="job-desc">Built automated Python and Excel-driven pipelines to audit and validate 500+ records, investigating discrepancies and cutting processing time by 45%. Refactored legacy scripts to reduce query latency and isolate recurring anomalies. Authored 5 standardised technical specifications and process guides to reduce downstream errors, and gained exposure to the iTrent HR system while checking employee records.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-when">Jan 2024 – Mar 2024</div>
+      <div>
+        <div class="job-role">Software Engineering & Data Analytics Practicum</div>
+        <div class="job-org">University of Essex</div>
+        <p class="job-desc">Served as Scrum Master for a 6-person team, managing sprint timelines and requirement intakes with Jira. Developed backend database components in Java and SQL, running 15+ integration and regression tests to secure build stability. Investigated data validation edge cases and presented technical milestones against specification-driven design standards.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-when">Jun 2021 – Sep 2021</div>
+      <div>
+        <div class="job-role">Data and Technology Insight Programme</div>
+        <div class="job-org">PwC</div>
+        <p class="job-desc">Supported structured data validation, reconciliation, and quality testing across 5+ concurrent project tracks. Drafted and maintained technical documentation of testing results and data configuration rules, and presented findings to translate technical detail for non-technical stakeholders.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="education">
+    <div class="section-head">
+      <h2>Education</h2>
+    </div>
+
+    <div class="job">
+      <div class="job-when">Oct 2022 – Jul 2025</div>
+      <div>
+        <div class="job-role">BSc Computer Science — Upper Second Class Honours (2:1)</div>
+        <div class="job-org">University of Essex</div>
+        <p class="job-desc">Relevant modules: Software Engineering, Object-Oriented Programming, Information Retrieval, Individual Capstone Project, Advanced Programming, Large Scale Software Systems, Introduction to Databases. Awarded a place on the Dean's List.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills">
+    <div class="section-head">
+      <h2>Skills</h2>
+    </div>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h3>Programming</h3>
+        <p>Python, Java, SQL</p>
+      </div>
+      <div class="skill-group">
+        <h3>Frameworks</h3>
+        <p>NumPy, Pandas</p>
+      </div>
+      <div class="skill-group">
+        <h3>Databases</h3>
+        <p>PostgreSQL, MySQL</p>
+      </div>
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <p>Git, Jira, Power BI, Tableau, Excel, PowerPoint</p>
+      </div>
+      <div class="skill-group">
+        <h3>AI tools</h3>
+        <p>GitHub Copilot, Claude (Anthropic)</p>
+      </div>
+      <div class="skill-group">
+        <h3>Competencies</h3>
+        <p>Automation pipeline development, data analysis, back testing, technical documentation</p>
+      </div>
+      <div class="skill-group">
+        <h3>Methodologies</h3>
+        <p>OOP, TDD, Agile, XP</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="certifications">
+    <div class="section-head">
+      <h2>Certifications & Awards</h2>
+    </div>
+    <div class="job">
+      <div class="job-when">Oct 2024 – Jul 2025</div>
+      <div>
+        <div class="job-role">Dean's List Award</div>
+        <div class="job-org">University of Essex</div>
+      </div>
+    </div>
+    <div class="job">
+      <div class="job-when">Oct 2023 – May 2024</div>
+      <div>
+        <div class="job-role">CCNA: Routing and Switching</div>
+        <div class="job-org">Cisco</div>
+      </div>
+    </div>
+    <div class="job">
+      <div class="job-when">Oct 2022 – May 2023</div>
+      <div>
+        <div class="job-role">CCNA: Network Fundamentals</div>
+        <div class="job-org">Cisco</div>
+      </div>
+    </div>
+  </section>
+    <div class="section-head">
+      <h2>Get in touch</h2>
+    </div>
+    <p>I'm actively looking for entry-level opportunities in software engineering or data & analytics. If something on this page is relevant, I'd like to hear from you.</p>
+    <div class="footer-links">
+      <a href="mailto:kishan.ravikumar@email.com">Email me →</a>
+      <a href="https://github.com/Kishanr19" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/kishanravikumar" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="/resume.pdf" target="_blank" rel="noopener">Download resume</a>
+    </div>
+    <div class="fine-print">Updated September 2026.</div>
+  </footer>
+
+</div>
+
+</body>
+</html>
