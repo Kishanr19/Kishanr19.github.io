@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kishan Ravikumar — Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F1EFE8;
+    --ink:#212529;
+    --ink-soft:#5A6169;
+    --line:#D9D4C8;
+    --indigo:#0D6EFD;
+    --sage:#0D6EFD;
+    --status:#198754;
+    --paper-raised:#E7E3D8;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{color:inherit;}
+
+  ::selection{background:var(--indigo); color:var(--paper);}
+
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  /* ---------- Header / Hero ---------- */
+
+  header.hero{
+    padding:96px 0 64px;
+    border-bottom:1px solid var(--line);
+  }
+
+  .kicker{
+    font-size:14px;
+    color:var(--sage);
+    font-weight:500;
+    margin-bottom:18px;
+    letter-spacing:0.01em;
+  }
+
+  h1.name{
+    font-family:'Fraunces', serif;
+    font-optical-sizing:auto;
+    font-weight:500;
+    font-size:clamp(40px, 7vw, 64px);
+    line-height:1.05;
+    letter-spacing:-0.01em;
+    margin-bottom:22px;
+  }
+
+  .role-line{
+    font-size:19px;
+    color:var(--ink-soft);
+    max-width:56ch;
+    margin-bottom:30px;
+  }
+
+  .role-line strong{
+    color:var(--ink);
+    font-weight:600;
+  }
+
+  .status-line{
+    display:flex;
+    align-items:center;
+    gap:9px;
+    font-size:14px;
+    color:var(--ink-soft);
+    margin-bottom:26px;
+  }
+
+  .status-dot{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:var(--status);
+    flex-shrink:0;
+  }
+
+  .contact-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px 22px;
+    font-size:15px;
+  }
+
+  .contact-row a{
+    text-decoration:none;
+    border-bottom:1px solid var(--line);
+    padding-bottom:1px;
+    transition:border-color 0.15s ease, color 0.15s ease;
+  }
+
+  .contact-row a:hover{
+    border-color:var(--indigo);
+    color:var(--indigo);
+  }
+
+  /* ---------- Section shell ---------- */
+
+  section{
+    padding:56px 0;
+    border-bottom:1px solid var(--line);
+  }
+
+  section:last-of-type{
+    border-bottom:none;
+  }
+
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    margin-bottom:34px;
+    gap:16px;
+  }
+
+  h2{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:26px;
+  }
+
+  .section-note{
+    font-size:14px;
+    color:var(--ink-soft);
+    white-space:nowrap;
+  }
+
+  /* ---------- About ---------- */
+
+  .about p{
+    max-width:62ch;
+    color:var(--ink-soft);
+    font-size:16.5px;
+  }
+
+  .about p + p{
+    margin-top:16px;
+  }
+
+  /* ---------- Projects ---------- */
+
+  .project{
+    padding:26px 0;
+    border-top:1px solid var(--line);
+  }
+
+  .project:first-child{
+    border-top:none;
+    padding-top:0;
+    padding-bottom:34px;
+  }
+
+  .project-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:16px;
+    flex-wrap:wrap;
+    margin-bottom:8px;
+  }
+
+  .project-title{
+    font-size:19px;
+    font-weight:600;
+  }
+
+  .project:first-child .project-title{
+    font-family:'Fraunces', serif;
+    font-size:24px;
+    font-weight:500;
+  }
+
+  .project:first-child .project-desc{
+    font-size:16.5px;
+  }
+
+  .project-links{
+    display:flex;
+    gap:14px;
+    font-size:14px;
+  }
+
+  .project-links a{
+    text-decoration:none;
+    color:var(--indigo);
+    border-bottom:1px solid transparent;
+  }
+
+  .project-links a:hover{
+    border-color:var(--indigo);
+  }
+
+  .project-desc{
+    color:var(--ink-soft);
+    max-width:62ch;
+    font-size:15.5px;
+    margin-bottom:12px;
+  }
+
+  .stack{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    font-size:13px;
+  }
+
+  .stack span{
+    background:var(--paper-raised);
+    color:var(--ink-soft);
+    padding:4px 10px;
+    border-radius:3px;
+  }
+
+  /* ---------- Experience ---------- */
+
+  .job{
+    display:grid;
+    grid-template-columns:140px 1fr;
+    gap:20px;
+    padding:22px 0;
+    border-top:1px solid var(--line);
+  }
+
+  .job:first-child{
+    border-top:none;
+    padding-top:0;
+  }
+
+  .job-when{
+    font-size:14px;
+    color:var(--ink-soft);
+    padding-top:2px;
+  }
+
+  .job-role{
+    font-size:17px;
+    font-weight:600;
+    margin-bottom:2px;
+  }
+
+  .job-org{
+    font-size:15px;
+    color:var(--sage);
+    font-weight:500;
+    margin-bottom:10px;
+  }
+
+  .job-desc{
+    color:var(--ink-soft);
+    font-size:15px;
+    max-width:56ch;
+  }
+
+  /* ---------- Skills ---------- */
+
+  .skill-groups{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+  }
+
+  .skill-group h3{
+    font-size:13px;
+    font-weight:600;
+    color:var(--ink);
+    margin-bottom:6px;
+  }
+
+  .skill-group p{
+    color:var(--ink-soft);
+    font-size:15px;
+    line-height:1.7;
+    max-width:60ch;
+  }
+
+  /* ---------- Footer / Contact ---------- */
+
+  footer{
+    padding:56px 0 90px;
+  }
+
+  footer p{
+    color:var(--ink-soft);
+    max-width:56ch;
+    margin-bottom:22px;
+  }
+
+  .footer-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 22px;
+  }
+
+  .footer-links a{
+    text-decoration:none;
+    font-size:15px;
+    font-weight:500;
+    color:var(--indigo);
+    border-bottom:1px solid var(--line);
+    padding-bottom:2px;
+  }
+
+  .footer-links a:hover{
+    border-color:var(--indigo);
+  }
+
+  .fine-print{
+    margin-top:48px;
+    font-size:13px;
+    color:var(--ink-soft);
+    opacity:0.7;
+  }
+
+  @media (max-width:600px){
+    header.hero{padding:64px 0 44px;}
+    .job{grid-template-columns:1fr; gap:4px;}
+    .skill-groups{grid-template-columns:1fr;}
+    section{padding:44px 0;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="kicker">Portfolio — Class of 2026</div>
+    <h1 class="name">Kishan Ravikumar</h1>
+    <p class="role-line">
+      <strong>Software engineer</strong> who just finished a CS degree and likes building things that are simple to use and honest about what they do. Looking for backend or full-stack roles.
+    </p>
+    <div class="status-line">
+      <span class="status-dot"></span>
+      Open to full-time roles — available immediately
+    </div>
+    <div class="contact-row">
+      <a href="mailto:kishan.ravikumar@email.com">kishan.ravikumar@email.com</a>
+      <a href="https://github.com/kishanravikumar" target="_blank" rel="noopener">github.com/kishanravikumar</a>
+      <a href="https://linkedin.com/in/kishanravikumar" target="_blank" rel="noopener">linkedin.com/in/kishanravikumar</a>
+      <a href="/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="section-head">
+      <h2>About</h2>
+    </div>
+    <p>I graduated with a B.S. in Computer Science, focused on backend systems and distributed computing coursework. Most of what I know past the classroom came from breaking side projects and fixing them slowly, which I'd recommend to anyone.</p>
+    <p>I'm comfortable across the stack but happiest working close to data — APIs, databases, the parts of a system that have to be correct, not just fast to ship. Open to relocating; currently based in the Bay Area.</p>
+  </section>
+
+  <section class="projects">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <div class="section-note">Selected work</div>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <div class="project-title">Routewise</div>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noopener">Live</a>
+          <a href="#" target="_blank" rel="noopener">Code</a>
+        </div>
+      </div>
+      <p class="project-desc">A trip-splitting tool that finds the cheapest fair way to divide travel costs among a group, using a min-cost flow algorithm instead of naive averaging. Built for a friend's backpacking trip; six people now use it regularly.</p>
+      <div class="stack"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>React</span></div>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <div class="project-title">study-sync</div>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noopener">Live</a>
+          <a href="#" target="_blank" rel="noopener">Code</a>
+        </div>
+      </div>
+      <p class="project-desc">Real-time collaborative flashcards for a study group of 40+ students during finals — operational-transform based sync so edits never overwrite each other, even offline.</p>
+      <div class="stack"><span>TypeScript</span><span>WebSockets</span><span>Redis</span><span>Next.js</span></div>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <div class="project-title">tinydb</div>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noopener">Code</a>
+          <a href="#" target="_blank" rel="noopener">Writeup</a>
+        </div>
+      </div>
+      <p class="project-desc">A single-file key-value database written from scratch to understand how real ones work — write-ahead logging, B-tree indexing, and crash recovery, benchmarked against SQLite on a few thousand writes.</p>
+      <div class="stack"><span>C</span><span>B-Trees</span><span>Systems</span></div>
+    </div>
+  </section>
+
+  <section class="experience">
+    <div class="section-head">
+      <h2>Experience</h2>
+    </div>
+
+    <div class="job">
+      <div class="job-when">Summer 2025</div>
+      <div>
+        <div class="job-role">Software Engineering Intern</div>
+        <div class="job-org">Company Name</div>
+        <p class="job-desc">Rebuilt an internal reporting pipeline that was timing out on large accounts, cutting average query time from 40s to under 3s. Shipped it to production and wrote the team's first tests for that service.</p>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-when">2023 – 2026</div>
+      <div>
+        <div class="job-role">Teaching Assistant, Data Structures</div>
+        <div class="job-org">University Name</div>
+        <p class="job-desc">Ran weekly sections and office hours for ~60 students, graded proofs and implementations, and rewrote two assignment specs that were consistently misread.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills">
+    <div class="section-head">
+      <h2>Skills</h2>
+    </div>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h3>Languages & tools</h3>
+        <p>Python, TypeScript, Java, C, SQL — Docker, Git, PostgreSQL, AWS</p>
+      </div>
+      <div class="skill-group">
+        <h3>Coursework</h3>
+        <p>Distributed Systems, Algorithms, Operating Systems, Databases</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="section-head">
+      <h2>Get in touch</h2>
+    </div>
+    <p>I'm actively looking for full-time roles starting after graduation. If something on this page is relevant, I'd like to hear from you.</p>
+    <div class="footer-links">
+      <a href="mailto:kishan.ravikumar@email.com">Email me →</a>
+      <a href="https://github.com/kishanravikumar" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/kishanravikumar" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="/resume.pdf" target="_blank" rel="noopener">Download resume</a>
+    </div>
+    <div class="fine-print">Updated September 2026.</div>
+  </footer>
+
+</div>
+
+</body>
+</html>
