@@ -26,6 +26,13 @@ export default function Contact() {
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm">
           <a
+            href={`mailto:${profile.email}`}
+            className="inline-flex items-center gap-1.5 text-ink-soft hover:text-accent transition-colors"
+          >
+            <Mail size={16} />
+            {profile.email}
+          </a>
+          <a
             href={`tel:${profile.phone.replace(/\s+/g, '')}`}
             className="inline-flex items-center gap-1.5 text-ink-soft hover:text-accent transition-colors"
           >

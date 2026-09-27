@@ -4,7 +4,7 @@ export const profile = {
   tagline:
     'BSc Computer Science graduate from the University of Essex (2:1), with a broad technical foundation built through academic and professional experience and projects. Looking for a full-time, entry-level graduate role to start my career.',
   email: 'kishan.ravi196@gmail.com',
-  phone: '07490 182595',
+  phone: '+44 7490 182595',
   github: 'https://github.com/Kishanr19',
   linkedin: 'https://www.linkedin.com/in/kishan-ravikumar-ba8476214/',
   cvFile: 'Kishan-Ravikumar-CV.pdf',
