@@ -9,7 +9,7 @@ export default function Contact() {
     <section id="contact" className="scroll-mt-20 py-28 px-6 border-t border-base-border bg-base-bg">
       <div ref={ref} className="reveal max-w-content mx-auto text-center">
         <h2 className="font-display font-semibold text-3xl tracking-tight mb-4">
-          Let's talk
+          Contact
         </h2>
         <p className="text-ink-soft max-w-md mx-auto mb-9">
           I'm open to full-time graduate roles and available to start immediately.
@@ -17,7 +17,9 @@ export default function Contact() {
         </p>
 
         <a
-          href={`mailto:${profile.email}`}
+          href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`}
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-2 rounded-xl bg-accent hover:bg-accent-hover text-white text-sm font-semibold px-6 py-3.5 transition-colors"
         >
           <Mail size={16} />
