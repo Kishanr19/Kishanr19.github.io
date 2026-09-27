@@ -142,7 +142,9 @@ export const skills = [
 export const education = {
   degree: 'BSc (Hons) Computer Science',
   institution: 'University of Essex',
-  grade: 'Upper Second Class Honours (2:1) — 67%',
+  grade: 'Upper Second Class Honours (2:1)',
+  honorsDescription:
+    'An academic honour recognising exceptional academic excellence among the highest-performing students.',
   dates: 'Oct 2021 – Jul 2025',
   honors: "Dean's List Award",
   dissertation: {

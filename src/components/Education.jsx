@@ -29,11 +29,18 @@ export default function Education() {
                 </span>
               </div>
 
-              <p className="text-sm text-ink-soft mt-4">{education.grade}</p>
+              <p className="text-sm text-ink-soft mt-4">
+                <span className="text-ink font-medium">Grade achieved:</span> {education.grade}
+              </p>
 
-              <div className="mt-3 inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full bg-accent-soft text-accent">
-                <Award size={13} />
-                {education.honors}
+              <div className="mt-4 flex items-start gap-2.5 rounded-xl bg-accent-soft px-4 py-3">
+                <Award size={15} className="text-accent shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-xs font-semibold text-accent">{education.honors}</p>
+                  <p className="text-xs text-ink-soft mt-0.5 leading-relaxed">
+                    {education.honorsDescription}
+                  </p>
+                </div>
               </div>
 
               <div className="mt-6 pt-6 border-t border-base-border">
