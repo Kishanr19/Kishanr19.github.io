@@ -21,10 +21,10 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <Education />
         <Experience />
         <Projects />
         <Skills />
-        <Education />
       </main>
       <Contact />
       <Footer />

@@ -150,6 +150,45 @@ export const education = {
     grade: '78% (First Class)',
     supervisor: 'Dr Renato Amorim',
   },
+  modules: [
+    {
+      year: 'Year 1',
+      items: [
+        'CE101 Team Project Challenge',
+        'CE141 Mathematics for Computing',
+        'CE151 Introduction to Programming',
+        'CE152 Object-Oriented Programming',
+        'CE153 Introduction to Databases',
+        'CE154 Web Development',
+        'CE155 Network Fundamentals',
+        'CE161 Fundamentals of Digital Systems',
+      ],
+    },
+    {
+      year: 'Year 2',
+      items: [
+        'CE201 Team Project Challenge',
+        'CE202 Software Engineering',
+        'CE203 Application Programming',
+        'CE204 Data Structures and Algorithms',
+        'CE217 Computer Game Design',
+        'CE222 Operating Systems',
+        'CE231 Computer and Data Networks',
+        'CE235 Computer Security',
+      ],
+    },
+    {
+      year: 'Year 3',
+      items: [
+        'CE301 Individual Capstone Project Challenge',
+        'CE303 Advanced Programming',
+        'CE306 Information Retrieval',
+        'CE317 Virtual Worlds',
+        'CE318 High-Level Games Development',
+        'CE320 Large Scale Software Systems and Extreme Programming',
+      ],
+    },
+  ],
 }
 
 export const certifications = [

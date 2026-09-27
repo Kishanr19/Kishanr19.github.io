@@ -43,6 +43,24 @@ export default function Education() {
                   supervised by {education.dissertation.supervisor}.
                 </p>
               </div>
+
+              <div className="mt-6 pt-6 border-t border-base-border space-y-4">
+                {education.modules.map((group) => (
+                  <div key={group.year}>
+                    <p className="text-sm font-medium text-ink mb-2">{group.year}</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {group.items.map((item) => (
+                        <span
+                          key={item}
+                          className="font-mono text-[11px] px-2.5 py-1 rounded-md border border-base-border text-ink-soft"
+                        >
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

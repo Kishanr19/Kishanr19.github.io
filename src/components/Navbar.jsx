@@ -4,10 +4,10 @@ import { useScrollSpy } from '../hooks/useScrollSpy.js'
 
 const LINKS = [
   { id: 'about', label: 'About' },
+  { id: 'education', label: 'Education' },
   { id: 'experience', label: 'Experience' },
   { id: 'projects', label: 'Projects' },
   { id: 'skills', label: 'Skills' },
-  { id: 'education', label: 'Education' },
   { id: 'contact', label: 'Contact' },
 ]
 
