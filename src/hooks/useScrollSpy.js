@@ -26,7 +26,25 @@ export function useScrollSpy(ids) {
     )
 
     elements.forEach((el) => observer.observe(el))
-    return () => observer.disconnect()
+
+    // Near-bottom-of-page fallback: the last section may never satisfy the
+    // -50% bottom margin above if there isn't enough room left to scroll
+    // past it, so the observer alone can leave an earlier link stuck active.
+    const lastId = ids[ids.length - 1]
+    function handleScroll() {
+      const scrolledToBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2
+      if (scrolledToBottom && lastId) {
+        setActiveId(lastId)
+      }
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    handleScroll()
+
+    return () => {
+      observer.disconnect()
+      window.removeEventListener('scroll', handleScroll)
+    }
   }, [ids])
 
   return activeId
