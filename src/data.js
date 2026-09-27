@@ -12,6 +12,14 @@ export const profile = {
 
 export const experience = [
   {
+    title: 'STEM Peer Mentor',
+    company: 'University of Essex',
+    dates: 'Feb 2025 – Jul 2025',
+    points: [
+      'Delivered structured one-to-one mentoring for 15+ students, adapting technical guidance to individual needs while managing sessions alongside academic deadlines',
+    ],
+  },
+  {
     title: 'Data and Operations Assistant',
     company: 'University of Essex',
     dates: 'Jan 2023 – Jul 2025',
@@ -20,17 +28,20 @@ export const experience = [
       'Tested functionality for an AI-driven student support chatbot, presenting performance updates to steering committees',
       'Maintained implementation timelines and milestone trackers for an automated room-booking rollout',
       'Mapped enrolment workflows to support the transition from paper forms to a digital portal',
+      'Managed CRM data for 500+ applicants, tracking recruitment pipeline and ensuring enrolment accuracy',
+      'Coordinated a 300+ attendee STEM event, leading cross-functional teams and managing event logistics, project timelines, and resource allocation',
+      'Identified and resolved data anomalies and schema inconsistencies proactively, applying a methodical approach to catching issues before they compounded downstream',
     ],
   },
   {
-    title: 'CSEE Software Engineering Intern',
+    title: 'Frontrunner Software Engineering Internship',
     company: 'University of Essex',
     dates: 'Jan 2024 – Mar 2024',
     points: [
-      'Developed Python and SQL backend components within a six-person Agile team, delivering iteratively against sprint objectives',
-      'Acted as Scrum Master, coordinating stand-ups and tracking tasks in Jira',
-      'Used SQL to compare records across databases and isolate anomalies',
-      'Created and executed 15+ regression test suites to support reliable releases',
+      'Designed and implemented an e-commerce and booking application using Python and SQL, translating business requirements into functional, process-driven application workflows',
+      'Built and iterated functional prototypes against defined requirements, refining workflow logic and application features before implementing the final solution',
+      'Integrated REST APIs and used regression testing to validate functionality, applying AI tools such as Google Gemini to explore implementation approaches and troubleshoot issues before deployment',
+      'Led Agile project delivery as Scrum Master for a 6-person team, using Jira to prioritise development work, coordinate implementation and drive resolution of project blockers',
     ],
   },
   {
@@ -40,14 +51,6 @@ export const experience = [
     points: [
       'Analysed structured datasets to identify trends and inconsistencies, translating results into clear reporting outputs against defined requirements',
       'Served as Scrum Master for a 6-person team, using Jira to organise priorities and communicate progress',
-    ],
-  },
-  {
-    title: 'STEM Peer Mentor',
-    company: 'University of Essex',
-    dates: 'Feb 2025 – Jul 2025',
-    points: [
-      'Delivered structured one-to-one mentoring for 15+ students, adapting technical guidance to individual needs while managing sessions alongside academic deadlines',
     ],
   },
   {
