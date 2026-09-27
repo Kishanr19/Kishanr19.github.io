@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 inset-x-0 z-50 border-b border-base-border bg-base-bg/80 backdrop-blur-md">
-      <div className="max-w-content mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="w-full px-6 sm:px-10 lg:px-16 h-16 flex items-center justify-between">
         <a
           href="#top"
           className="font-display font-semibold text-lg tracking-tight text-ink"
@@ -64,7 +64,7 @@ export default function Navbar() {
           open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 border-t-0'
         }`}
       >
-        <div className="max-w-content mx-auto px-6 py-3 flex flex-col">
+        <div className="w-full px-6 sm:px-10 lg:px-16 py-3 flex flex-col">
           {LINKS.map((link) => (
             <a
               key={link.id}
