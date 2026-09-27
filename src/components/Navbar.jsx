@@ -30,7 +30,7 @@ export default function Navbar() {
           {LINKS.map((link) => (
             <a
               key={link.id}
-              href={`#${link.id}`}
+              href={link.id === 'about' ? '#top' : `#${link.id}`}
               className={`relative text-sm font-medium transition-colors py-1 ${
                 activeId === link.id ? 'text-ink' : 'text-ink-soft hover:text-ink'
               }`}
@@ -68,7 +68,7 @@ export default function Navbar() {
           {LINKS.map((link) => (
             <a
               key={link.id}
-              href={`#${link.id}`}
+              href={link.id === 'about' ? '#top' : `#${link.id}`}
               onClick={() => setOpen(false)}
               className="py-3 text-sm font-medium text-ink-soft hover:text-ink border-b border-base-border last:border-none"
             >

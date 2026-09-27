@@ -95,16 +95,17 @@ export const projects = [
     demo: null,
   },
   {
-    name: 'PacRun — Dissertation',
+    name: 'PacRun: A Java-Based Exploration of Object-Oriented Game Architecture with Advanced State Management (Dissertation)',
     problem:
       'Demonstrating advanced object-oriented design and real-time state management needed a project with genuine architectural complexity, not just a tutorial clone.',
     solution:
       'A Java reimagining of Pac-Man built around a unified entity model, personality-driven ghost AI, and optimised real-time collision detection — graded 78% (First).',
     features: [
-      'Modular, MVC-inspired architecture built around a unified Block class demonstrating encapsulation, inheritance, and polymorphism',
-      'AI for four ghosts with distinct targeting strategies, anti-oscillation logic, and controlled randomness to avoid predictable pathing',
-      'State-driven power-up mechanics and a competitive two-player "Pellet Race" mode with position-swapping',
-      'Real-time collision detection optimised with AABB selective testing and HashSet-backed entity storage',
+      'Designed a modular, MVC-inspired architecture built around a unified Block class, encapsulating position, state, and behaviour across every entity to demonstrate OOP principles including encapsulation, inheritance, and polymorphism',
+      'Built AI for four ghosts with distinct targeting strategies (direct pursuit, ambush, alternating pursuit/wander, proximity-based retreat), including anti-oscillation logic and controlled randomness to avoid predictable pathing',
+      'Implemented state-driven power-up mechanics (speed boosts, control reversal, ghost-hunting) and a competitive two-player "Pellet Race" mode with position-swapping to keep play fair',
+      'Optimised real-time collision detection using an AABB approach with selective testing, HashSet-backed entity storage, and conditional logic gating to maintain stable performance under Java Swing\'s event-driven model',
+      'Validated gameplay and usability through structured playtesting with 8+ participants, iterating on difficulty progression and engagement based on feedback',
     ],
     outcome: 'Graded 78% (First Class), validated through structured playtesting with 8+ participants.',
     tech: ['Java', 'Swing', 'OOP & MVC', 'AI Pathfinding', 'Performance Optimisation'],
