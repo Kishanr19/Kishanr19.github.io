@@ -46,7 +46,7 @@ export default function Education() {
               <div className="mt-6 pt-6 border-t border-base-border">
                 <p className="text-sm font-medium text-ink mb-1">Dissertation</p>
                 <p className="text-sm text-ink-soft leading-relaxed">
-                  {education.dissertation.title} — graded {education.dissertation.grade},
+                  {education.dissertation.title} - graded {education.dissertation.grade},
                   supervised by {education.dissertation.supervisor}.
                 </p>
               </div>
