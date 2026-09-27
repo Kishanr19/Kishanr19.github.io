@@ -24,7 +24,7 @@ export default function About() {
             strong aptitude for new technologies, I'm now looking to build on this foundation in
             a graduate role, whether in data analytics, software engineering, or business
             transformation, where I can keep developing across automation, data visualisation and
-            operational improvement, and gain further industrial expertise.
+            operational improvement, and gain further industrial exposure.
           </p>
         </div>
       </div>
