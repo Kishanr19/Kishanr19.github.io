@@ -176,7 +176,7 @@ export const education = {
   grade: 'Upper Second Class Honours (2:1)',
   honorsDescription:
     'An academic honour recognising exceptional academic excellence among the highest-performing students.',
-  dates: 'Oct 2021 – Jul 2025',
+  dates: '2022 – Jul 2025',
   honors: "Dean's List Award",
   dissertation: {
     title: 'PacRun: A Java-Based Exploration of Object-Oriented Game Architecture with Advanced State Management',
