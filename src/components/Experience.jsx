@@ -30,7 +30,7 @@ function ExperienceItem({ item }) {
 export default function Experience() {
   const headingRef = useReveal()
   return (
-    <section id="experience" className="py-24 px-6 border-t border-base-border bg-base-bg">
+    <section id="experience" className="scroll-mt-20 py-24 px-6 border-t border-base-border bg-base-bg">
       <div className="max-w-content mx-auto">
         <h2 ref={headingRef} className="reveal font-display font-semibold text-2xl tracking-tight mb-10">
           Experience

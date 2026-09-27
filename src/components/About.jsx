@@ -4,7 +4,7 @@ export default function About() {
   const ref = useReveal()
 
   return (
-    <section id="about" className="py-24 px-6 border-t border-base-border">
+    <section id="about" className="scroll-mt-20 py-24 px-6 border-t border-base-border">
       <div ref={ref} className="reveal max-w-content mx-auto">
         <h2 className="font-display font-semibold text-2xl tracking-tight mb-8">About</h2>
         <div className="max-w-2xl space-y-4 text-ink-soft leading-relaxed">

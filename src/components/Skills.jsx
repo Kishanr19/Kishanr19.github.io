@@ -23,7 +23,7 @@ function SkillGroup({ group }) {
 export default function Skills() {
   const headingRef = useReveal()
   return (
-    <section id="skills" className="py-24 px-6 border-t border-base-border bg-base-bg">
+    <section id="skills" className="scroll-mt-20 py-24 px-6 border-t border-base-border bg-base-bg">
       <div className="max-w-content mx-auto">
         <h2 ref={headingRef} className="reveal font-display font-semibold text-2xl tracking-tight mb-10">
           Skills

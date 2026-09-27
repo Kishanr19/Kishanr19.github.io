@@ -6,7 +6,7 @@ export default function Contact() {
   const ref = useReveal()
 
   return (
-    <section id="contact" className="py-28 px-6 border-t border-base-border bg-base-bg">
+    <section id="contact" className="scroll-mt-20 py-28 px-6 border-t border-base-border bg-base-bg">
       <div ref={ref} className="reveal max-w-content mx-auto text-center">
         <h2 className="font-display font-semibold text-3xl tracking-tight mb-4">
           Let's talk
