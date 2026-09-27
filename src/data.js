@@ -2,7 +2,7 @@ export const profile = {
   name: 'Kishan Ravikumar',
   role: 'Computer Science Graduate',
   tagline:
-    'BSc Computer Science graduate (2:1) building software and data solutions — from backend systems to analytics pipelines.',
+    'BSc Computer Science graduate from the University of Essex (2:1), with a broad technical foundation built through academic and professional experience and projects. Looking for a full-time, entry-level graduate role to start my career.',
   email: 'kishan.ravi196@gmail.com',
   phone: '07490 182595',
   github: 'https://github.com/Kishanr19',
