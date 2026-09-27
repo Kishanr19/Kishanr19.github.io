@@ -65,7 +65,7 @@ export const projects = [
   {
     name: 'Commercial & Customer Intelligence Analytics Platform',
     description:
-      'A multi-tool analytics portfolio spanning database design, Python data science, and BI dashboarding, built to demonstrate a full analytical workflow from raw data to decision-ready insight rather than a single isolated technique. Covers a relational retail database, a live-API Python pipeline, a machine learning model, and multiple Excel/Tableau dashboards across real-world datasets including retail sales, employee attrition, and property sales.',
+      'A multi-tool analytics portfolio spanning database design, Python data science, and Tableau/Excel dashboarding, built to demonstrate a full analytical workflow from raw data to decision-ready insight rather than a single isolated technique. Covers a relational retail database, a live-API Python pipeline, a machine learning model, and multiple Excel/Tableau dashboards across real-world datasets including retail sales, employee attrition, and property sales.',
     features: [
       'Designed a relational PostgreSQL schema (BicyclesDB) for a bike retailer\'s sales and inventory system, then wrote 20+ SQL queries using multi-table joins, subqueries, aggregation, and grouping to analyse revenue, customer behaviour, inventory, and staff performance',
       'Built a Python ETL pipeline that retrieves live S&P 500 options data via the Tradier API, processes and calculates trading ranges with pandas, and loads results into PostgreSQL through a SQLAlchemy ORM layer',
@@ -74,7 +74,7 @@ export const projects = [
       'Produced Excel-based analysis of Adidas US sales and Milwaukee property sales using pivot tables, XLOOKUP, statistical hypothesis testing, and interactive slicers for drill-down exploration',
     ],
     outcome:
-      'Delivered four end-to-end analytical workflows — a relational database with 20+ validated queries, a live-API ETL pipeline, a predictive ML model, and multiple published BI dashboards — turning disconnected raw datasets into structured, query-ready, decision-ready outputs.',
+      'Delivered four end-to-end analytical workflows — a relational database with 20+ validated queries, a live-API ETL pipeline, a predictive ML model, and multiple published Tableau/Excel dashboards — turning disconnected raw datasets into structured, query-ready, decision-ready outputs.',
     tech: ['Python', 'PostgreSQL', 'SQLAlchemy', 'REST API', 'Tableau', 'Pandas', 'scikit-learn', 'Excel'],
     github: 'https://github.com/Kishanr19/Commercial-Customer-Intelligence-Analytics-Platform-',
     demo: null,
@@ -99,7 +99,7 @@ export const projects = [
   {
     name: 'PacRun: A Java-Based Exploration of Object-Oriented Game Architecture with Advanced State Management (Dissertation)',
     description:
-      'Demonstrating advanced object-oriented design and real-time state management needed a project with genuine architectural complexity, not just a tutorial clone. A Java reimagining of Pac-Man built around a unified entity model, personality-driven ghost AI, and optimised real-time collision detection — graded 78% (First).',
+      'Demonstrating advanced object-oriented design and real-time state management needed a project with genuine architectural complexity, not just a tutorial clone. A Java reimagining of Pac-Man built around a unified entity model, personality-driven ghost AI, and optimised real-time collision detection.',
     features: [
       'Designed a modular, MVC-inspired architecture built around a unified Block class, encapsulating position, state, and behaviour across every entity to demonstrate OOP principles including encapsulation, inheritance, and polymorphism',
       'Built AI for four ghosts with distinct targeting strategies (direct pursuit, ambush, alternating pursuit/wander, proximity-based retreat), including anti-oscillation logic and controlled randomness to avoid predictable pathing',
@@ -107,7 +107,8 @@ export const projects = [
       'Optimised real-time collision detection using an AABB approach with selective testing, HashSet-backed entity storage, and conditional logic gating to maintain stable performance under Java Swing\'s event-driven model',
       'Validated gameplay and usability through structured playtesting with 8+ participants, iterating on difficulty progression and engagement based on feedback',
     ],
-    outcome: 'Graded 78% (First Class), validated through structured playtesting with 8+ participants.',
+    outcome:
+      'Delivered a fully playable, architecturally complex game with four distinct AI-driven ghost behaviours, layered power-up mechanics, and a competitive two-player mode, validated for usability and difficulty balance through structured playtesting with 8+ participants.',
     tech: ['Java', 'Swing', 'OOP & MVC', 'AI Pathfinding', 'Performance Optimisation'],
     github: 'https://github.com/Kishanr19/PacRun-A-Java-Based-Exploration-of-Object-Oriented-Game-Architecture-with-Advanced-State-Management',
     demo: null,
@@ -125,7 +126,8 @@ export const projects = [
       'Dual logging system recording events as both timestamped text logs and structured JSON via GSON',
       'Graceful shutdown handling for Ctrl-C interruption and client reconnection scenarios',
     ],
-    outcome: 'Demonstrated safe concurrent order handling under simultaneous multi-client load with zero race conditions.',
+    outcome:
+      'Delivered a fully working concurrent client-server system that handles multiple simultaneous customer connections without data corruption or race conditions, with dual-format event logging and graceful recovery from client disconnects.',
     tech: ['Java', 'Socket Programming', 'Multi-threading', 'GSON', 'Collections Framework'],
     github: 'https://github.com/Kishanr19/-Virtual-Caf-Concurrent-Client-Server-System',
     demo: null,
