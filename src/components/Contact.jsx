@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin } from 'lucide-react'
+import { Mail, Phone, Github, Linkedin } from 'lucide-react'
 import { profile } from '../data.js'
 import { useReveal } from '../hooks/useReveal.js'
 
@@ -13,7 +13,7 @@ export default function Contact() {
         </h2>
         <p className="text-ink-soft max-w-md mx-auto mb-9">
           I'm open to full-time graduate roles and available to start immediately.
-          Reach out — I'll get back to you quickly.
+          Please reach out and I'll get back to you quickly.
         </p>
 
         <a
@@ -24,7 +24,14 @@ export default function Contact() {
           Email me
         </a>
 
-        <div className="mt-8 flex items-center justify-center gap-6 text-sm">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm">
+          <a
+            href={`tel:${profile.phone.replace(/\s+/g, '')}`}
+            className="inline-flex items-center gap-1.5 text-ink-soft hover:text-accent transition-colors"
+          >
+            <Phone size={16} />
+            {profile.phone}
+          </a>
           <a
             href={profile.github}
             target="_blank"
