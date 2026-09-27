@@ -51,14 +51,14 @@ function ProjectCard({ project }) {
         ))}
       </div>
 
-      <div className="flex flex-wrap items-center gap-5 pt-5 border-t border-base-border">
+      <div className="flex flex-wrap items-center gap-2.5 pt-5 border-t border-base-border">
         <a
           href={project.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 text-sm font-semibold text-ink hover:text-accent transition-colors"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full border border-base-border text-ink hover:border-accent hover:text-accent transition-colors"
         >
-          <Github size={16} />
+          <Github size={14} />
           Code
         </a>
         {project.report && (
@@ -66,9 +66,9 @@ function ProjectCard({ project }) {
             href={project.report}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm font-medium text-ink-soft hover:text-accent transition-colors"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full border border-base-border text-ink hover:border-accent hover:text-accent transition-colors"
           >
-            <FileText size={16} />
+            <FileText size={14} />
             Report
           </a>
         )}
@@ -77,9 +77,9 @@ function ProjectCard({ project }) {
             href={project.demo}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm font-medium text-ink-soft hover:text-accent transition-colors"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full border border-base-border text-ink hover:border-accent hover:text-accent transition-colors"
           >
-            <ArrowUpRight size={16} />
+            <ArrowUpRight size={14} />
             Live demo
           </a>
         )}

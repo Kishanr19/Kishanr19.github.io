@@ -111,9 +111,26 @@ export const projects = [
     tech: ['Java', 'Swing', 'OOP & MVC', 'AI Pathfinding', 'Performance Optimisation'],
     github: 'https://github.com/Kishanr19/PacRun-A-Java-Based-Exploration-of-Object-Oriented-Game-Architecture-with-Advanced-State-Management',
     demo: null,
-    wide: true,
     report:
       'https://github.com/Kishanr19/PacRun-A-Java-Based-Exploration-of-Object-Oriented-Game-Architecture-with-Advanced-State-Management/blob/main/CE301%20Final%20Report.pdf',
+  },
+  {
+    name: 'Virtual Café — Concurrent Client-Server System',
+    problem:
+      'Modelling real-world resource contention needed a system where multiple clients compete for shared resources at once, not a simplified single-user demo.',
+    solution:
+      'A multi-threaded Java client-server application simulating a real-time café where multiple customers order concurrently and a central server processes each request through a synchronized workflow.',
+    features: [
+      'Concurrent processing of multiple simultaneous customer connections, each handled by its own dedicated request thread',
+      'Order state management tracking each beverage through waiting, brewing (30s tea / 45s coffee), and completion stages',
+      'Thread-safe design using synchronized collections to prevent race conditions under concurrent load',
+      'Dual logging system recording events as both timestamped text logs and structured JSON via GSON',
+      'Graceful shutdown handling for Ctrl-C interruption and client reconnection scenarios',
+    ],
+    outcome: 'Demonstrated safe concurrent order handling under simultaneous multi-client load with zero race conditions.',
+    tech: ['Java', 'Socket Programming', 'Multi-threading', 'GSON', 'Collections Framework'],
+    github: 'https://github.com/Kishanr19/-Virtual-Caf-Concurrent-Client-Server-System',
+    demo: null,
   },
 ]
 
