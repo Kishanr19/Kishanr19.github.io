@@ -118,24 +118,20 @@ export const projects = [
 
 export const skills = [
   {
-    category: 'Languages',
-    items: ['Python', 'Java', 'SQL'],
+    category: 'Programming and Data',
+    items: ['Python', 'SQL', 'Java', 'PostgreSQL', 'SQLAlchemy'],
   },
   {
-    category: 'Data',
-    items: ['Pandas', 'NumPy', 'PostgreSQL', 'MySQL', 'Excel', 'SQLAlchemy', 'Tableau', 'Power BI'],
+    category: 'Core Systems and Tools',
+    items: ['Microsoft Excel', 'PowerPoint', 'Word', 'Dynamics 365 CRM', 'Jira', 'Google Workspace'],
   },
   {
-    category: 'Software Engineering',
-    items: ['OOP', 'MVC', 'TDD', 'Regression Testing', 'REST APIs', 'Extreme Programming'],
+    category: 'Project and Delivery',
+    items: ['Git', 'Agile', 'Workflow Mapping'],
   },
   {
-    category: 'Tools & Workflow',
-    items: ['Git', 'GitHub', 'GitLab', 'Jira', 'IntelliJ IDEA', 'Agile', 'Scrum'],
-  },
-  {
-    category: 'Infrastructure & Networking',
-    items: ['Cisco CCNA', 'Routing & Switching', 'Linux'],
+    category: 'Automation and AI',
+    items: ['Microsoft Copilot', 'REST APIs', 'Python Automation'],
   },
 ]
 
