@@ -149,7 +149,7 @@ export const education = {
   honors: "Dean's List Award",
   dissertation: {
     title: 'PacRun: A Java-Based Exploration of Object-Oriented Game Architecture with Advanced State Management',
-    grade: '78% (First Class)',
+    grade: 'First Class',
     supervisor: 'Dr Renato Amorim',
   },
   modules: [

@@ -44,11 +44,20 @@ export default function Education() {
               </div>
 
               <div className="mt-6 pt-6 border-t border-base-border">
-                <p className="text-sm font-medium text-ink mb-1">Dissertation</p>
-                <p className="text-sm text-ink-soft leading-relaxed">
-                  {education.dissertation.title} - graded {education.dissertation.grade},
-                  supervised by {education.dissertation.supervisor}.
+                <p className="text-sm font-medium text-ink mb-2">Dissertation</p>
+                <p className="text-sm text-ink-soft leading-relaxed mb-3">
+                  {education.dissertation.title}
                 </p>
+                <div className="space-y-1 text-sm">
+                  <p className="text-ink-soft">
+                    <span className="text-ink font-medium">Grade achieved:</span>{' '}
+                    {education.dissertation.grade}
+                  </p>
+                  <p className="text-ink-soft">
+                    <span className="text-ink font-medium">Supervised by:</span>{' '}
+                    {education.dissertation.supervisor}
+                  </p>
+                </div>
               </div>
 
               <div className="mt-6 pt-6 border-t border-base-border space-y-4">
