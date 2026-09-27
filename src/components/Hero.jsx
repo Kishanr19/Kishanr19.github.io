@@ -20,7 +20,7 @@ export default function Hero() {
             <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-60 animate-ping" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
           </span>
-          Open to full-time roles — available immediately
+          Open to full-time roles, available immediately
         </div>
 
         <div className="mt-9 flex flex-wrap items-center gap-3">
