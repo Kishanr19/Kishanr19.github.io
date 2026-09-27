@@ -8,7 +8,7 @@ function ProjectCard({ project }) {
   return (
     <article
       ref={ref}
-      className={`reveal group rounded-card border border-base-border bg-base-surface p-8 transition-all hover:border-base-borderHover hover:bg-base-raised ${
+      className={`reveal group h-full flex flex-col rounded-card border border-base-border bg-base-surface p-8 transition-all hover:border-base-borderHover hover:bg-base-raised ${
         project.wide ? 'md:col-span-2' : ''
       }`}
     >
@@ -47,7 +47,7 @@ function ProjectCard({ project }) {
         ))}
       </div>
 
-      <div className="flex flex-wrap items-center gap-2.5 pt-5 border-t border-base-border">
+      <div className="mt-auto flex flex-wrap items-center gap-2.5 pt-5 border-t border-base-border">
         <a
           href={project.github}
           target="_blank"
