@@ -16,13 +16,9 @@ function ProjectCard({ project }) {
         {project.name}
       </h3>
 
-      <p className="text-sm text-ink-soft leading-relaxed mb-2">
-        <span className="text-ink font-medium">Problem: </span>
-        {project.problem}
-      </p>
       <p className="text-sm text-ink-soft leading-relaxed mb-5">
-        <span className="text-ink font-medium">Solution: </span>
-        {project.solution}
+        <span className="text-ink font-medium">Project overview: </span>
+        {project.description}
       </p>
 
       <ul className="space-y-2 mb-5">

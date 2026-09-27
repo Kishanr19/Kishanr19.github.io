@@ -64,42 +64,42 @@ export const experience = [
 export const projects = [
   {
     name: 'Commercial & Customer Intelligence Analytics Platform',
-    problem:
-      'Retail and property datasets sat in disconnected sources, making margin and sales trends slow to surface.',
-    solution:
-      'Built an automated ETL pipeline and relational schema to centralise the data, then layered dashboards on top for fast, repeatable analysis.',
+    description:
+      'A multi-tool analytics portfolio spanning database design, Python data science, and BI dashboarding, built to demonstrate a full analytical workflow from raw data to decision-ready insight rather than a single isolated technique. Covers a relational retail database, a live-API Python pipeline, a machine learning model, and multiple Excel/Tableau dashboards across real-world datasets including retail sales, employee attrition, and property sales.',
     features: [
-      'Python ETL pipeline extracting from a REST API, transforming, and loading into PostgreSQL via SQLAlchemy',
-      'Relational schema with 20+ SQL queries validating retail sales and inventory data across related tables',
-      'Excel/Tableau dashboards covering retail margins and property sales',
+      'Designed a relational PostgreSQL schema (BicyclesDB) for a bike retailer\'s sales and inventory system, then wrote 20+ SQL queries using multi-table joins, subqueries, aggregation, and grouping to analyse revenue, customer behaviour, inventory, and staff performance',
+      'Built a Python ETL pipeline that retrieves live S&P 500 options data via the Tradier API, processes and calculates trading ranges with pandas, and loads results into PostgreSQL through a SQLAlchemy ORM layer',
+      'Developed a logistic regression model in Jupyter to predict employee churn, including full exploratory data analysis with Matplotlib/Seaborn and model evaluation via scikit-learn cross-validation',
+      'Built interactive Tableau dashboards analysing a bank marketing campaign (customer segmentation and conversion) and Adidas retail performance (operating margin by year, location, and product category)',
+      'Produced Excel-based analysis of Adidas US sales and Milwaukee property sales using pivot tables, XLOOKUP, statistical hypothesis testing, and interactive slicers for drill-down exploration',
     ],
-    outcome: 'Turned raw multi-source data into a structured, query-ready dataset with repeatable reporting.',
-    tech: ['Python', 'PostgreSQL', 'SQLAlchemy', 'REST API', 'Tableau'],
+    outcome:
+      'Delivered four end-to-end analytical workflows — a relational database with 20+ validated queries, a live-API ETL pipeline, a predictive ML model, and multiple published BI dashboards — turning disconnected raw datasets into structured, query-ready, decision-ready outputs.',
+    tech: ['Python', 'PostgreSQL', 'SQLAlchemy', 'REST API', 'Tableau', 'Pandas', 'scikit-learn', 'Excel'],
     github: 'https://github.com/Kishanr19/Commercial-Customer-Intelligence-Analytics-Platform-',
     demo: null,
   },
   {
     name: 'Automated Grade Calculation & Validation System',
-    problem:
-      'Manual peer-assessment grading is slow and error-prone across large student teams.',
-    solution:
-      'Built a Java application in a 5-person hackathon team that automates validation and grade calculation with a testable, modular pipeline.',
+    description:
+      'Manual peer-assessment grading is slow, inconsistent, and error-prone across large student teams, since adjusting individual grades by hand from peer evaluation scores doesn\'t scale and is easy to get wrong. Built a Java application in a 5-person hackathon team that replaces this manual process with a validated, deterministic pipeline: structured peer-assessment data is checked for invalid or unexpected values before it ever reaches the calculation logic, so grade outputs stay consistent and defensible.',
     features: [
-      'Separated input validation, processing, and calculation into distinct, testable stages',
-      '10+ unit tests covering edge-case scenarios',
-      'Git-based version control with CI/CD for reliable delivery',
+      'Designed a modular pipeline with distinct input validation, processing, and calculation stages, so each part of the system could be developed, tested, and debugged independently rather than as one tangled process',
+      'Built defensive input validation that catches invalid or unexpected peer-assessment data before it reaches the grade calculation logic, isolating validation failures from calculation defects and making troubleshooting systematic',
+      'Implemented deterministic calculation rules that translate assessment requirements into explicit logic producing consistent, repeatable grade outcomes for identical inputs',
+      'Wrote 10+ unit tests covering expected inputs, boundary conditions, edge cases, and invalid data, following an implement → test → debug → fix → retest → integrate cycle to catch regressions before merging',
+      'Used Git and GitHub with CI/CD to validate every change before integration, coordinating delivery across a 5-person team under hackathon time constraints',
     ],
-    outcome: 'Automated a process that was previously manual and error-prone, with test coverage on every stage.',
-    tech: ['Java', 'JUnit', 'Git', 'CI/CD'],
+    outcome:
+      'Delivered a fully functional, end-to-end application that automated a previously manual, error-prone grading process, with robust input validation and test coverage on every pipeline stage — completed and shipped within the hackathon deadline.',
+    tech: ['Java', 'JUnit', 'Git', 'CI/CD', 'Agile'],
     github: 'https://github.com/Kishanr19/Automated-Grade-Calculation-Validation-System',
     demo: null,
   },
   {
     name: 'PacRun: A Java-Based Exploration of Object-Oriented Game Architecture with Advanced State Management (Dissertation)',
-    problem:
-      'Demonstrating advanced object-oriented design and real-time state management needed a project with genuine architectural complexity, not just a tutorial clone.',
-    solution:
-      'A Java reimagining of Pac-Man built around a unified entity model, personality-driven ghost AI, and optimised real-time collision detection — graded 78% (First).',
+    description:
+      'Demonstrating advanced object-oriented design and real-time state management needed a project with genuine architectural complexity, not just a tutorial clone. A Java reimagining of Pac-Man built around a unified entity model, personality-driven ghost AI, and optimised real-time collision detection — graded 78% (First).',
     features: [
       'Designed a modular, MVC-inspired architecture built around a unified Block class, encapsulating position, state, and behaviour across every entity to demonstrate OOP principles including encapsulation, inheritance, and polymorphism',
       'Built AI for four ghosts with distinct targeting strategies (direct pursuit, ambush, alternating pursuit/wander, proximity-based retreat), including anti-oscillation logic and controlled randomness to avoid predictable pathing',
@@ -116,10 +116,8 @@ export const projects = [
   },
   {
     name: 'Virtual Café — Concurrent Client-Server System',
-    problem:
-      'Modelling real-world resource contention needed a system where multiple clients compete for shared resources at once, not a simplified single-user demo.',
-    solution:
-      'A multi-threaded Java client-server application simulating a real-time café where multiple customers order concurrently and a central server processes each request through a synchronized workflow.',
+    description:
+      'Modelling real-world resource contention needed a system where multiple clients compete for shared resources at once, not a simplified single-user demo. A multi-threaded Java client-server application simulating a real-time café where multiple customers order concurrently and a central server processes each request through a synchronized workflow.',
     features: [
       'Concurrent processing of multiple simultaneous customer connections, each handled by its own dedicated request thread',
       'Order state management tracking each beverage through waiting, brewing (30s tea / 45s coffee), and completion stages',
