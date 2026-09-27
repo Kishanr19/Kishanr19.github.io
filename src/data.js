@@ -12,14 +12,6 @@ export const profile = {
 
 export const experience = [
   {
-    title: 'STEM Peer Mentor',
-    company: 'University of Essex',
-    dates: 'Feb 2025 – Jul 2025',
-    points: [
-      'Delivered structured one-to-one mentoring for 15+ students, adapting technical guidance to individual needs while managing sessions alongside academic deadlines',
-    ],
-  },
-  {
     title: 'Data and Operations Assistant',
     company: 'University of Essex',
     dates: 'Jan 2023 – Jul 2025',
@@ -31,6 +23,16 @@ export const experience = [
       'Managed CRM data for 500+ applicants, tracking recruitment pipeline and ensuring enrolment accuracy',
       'Coordinated a 300+ attendee STEM event, leading cross-functional teams and managing event logistics, project timelines, and resource allocation',
       'Identified and resolved data anomalies and schema inconsistencies proactively, applying a methodical approach to catching issues before they compounded downstream',
+    ],
+  },
+  {
+    title: 'STEM Peer Mentor',
+    company: 'University of Essex',
+    dates: 'Feb 2025 – Jul 2025',
+    points: [
+      'Delivered structured one-to-one mentoring for 15+ students, adapting technical guidance to individual needs while managing sessions alongside academic deadlines',
+      'Created learning strategies for diverse technical skill levels, increasing concept comprehension and logical reasoning assessment scores by 30% over four months for 15+ students',
+      "Streamlined complex technical principles to improve students' logical reasoning and problem-solving abilities",
     ],
   },
   {
