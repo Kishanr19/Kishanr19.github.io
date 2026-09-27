@@ -6,11 +6,8 @@ export default function Education() {
   const ref = useReveal()
 
   return (
-    <section
-      id="education"
-      className="scroll-mt-20 min-h-screen flex items-center px-6 border-t border-base-border"
-    >
-      <div className="max-w-content mx-auto w-full">
+    <section id="education" className="scroll-mt-20 py-24 px-6 border-t border-base-border">
+      <div className="max-w-content mx-auto">
         <h2 className="font-display font-semibold text-2xl tracking-tight mb-10">Education</h2>
 
         <div
