@@ -106,7 +106,7 @@ export const projects = [
   {
     name: 'PacRun: A Java-Based Exploration of Object-Oriented Game Architecture with Advanced State Management (Dissertation)',
     description:
-      'Demonstrating advanced object-oriented design and real-time state management needed a project with genuine architectural complexity, not just a tutorial clone. A Java reimagining of Pac-Man built around a unified entity model, personality-driven ghost AI, and optimised real-time collision detection.',
+      'Demonstrating advanced object-oriented design and real-time state management needed a project with genuine architectural complexity, not just a tutorial clone. A 4,700+ line Java reimagining of Pac-Man, built entirely on Java Swing with no external game engine, combining a unified entity model, pathfinding-driven ghost AI, and a fully custom real-time rendering and collision pipeline, validated by 37 JUnit tests.',
     features: [
       'Designed a modular, MVC-inspired architecture built around a unified Block class, encapsulating position, state, and behaviour across every entity to demonstrate OOP principles including encapsulation, inheritance, and polymorphism',
       'Built AI for four ghosts with distinct targeting strategies (direct pursuit, ambush, alternating pursuit/wander, proximity-based retreat), including anti-oscillation logic and controlled randomness to avoid predictable pathing',
