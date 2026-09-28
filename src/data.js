@@ -51,8 +51,10 @@ export const experience = [
     company: 'University of Essex',
     dates: 'Jan 2024 – Mar 2024',
     points: [
-      'Analysed structured datasets to identify trends and inconsistencies, translating results into clear reporting outputs against defined requirements',
-      'Served as Scrum Master for a 6-person team, using Jira to organise priorities and communicate progress',
+      'Cleaned and validated 1,500+ record datasets while creating technical data documentation to establish consistent data definitions and improve data accuracy by 20%',
+      'Executed Kibana log searches and query filtering to analyse system data, building 2 executive dashboards that cut reporting turnaround time from 5 days to 1 day',
+      'Led daily stand-ups across 4 two-week sprints as Scrum Master for a 6-person team, documenting sprint retrospectives and achieving a 100% sprint completion rate in Jira',
+      'Tracked and prioritised 25+ Jira user stories, maintaining clear project documentation and resolving 8 critical blockers to deliver all practicum milestones on schedule',
     ],
   },
   {
