@@ -226,13 +226,11 @@ export const education = {
 
 export const certifications = [
   {
-    name: 'Cisco Certified Network Associate Routing and Switching (CCNA)',
+    name: 'Cisco Certified Network Associate (CCNA) - Routing and Switching',
     issuer: 'Cisco',
-    dates: 'Issued Oct 2023 · Expires Jun 2034',
   },
   {
-    name: 'CCNAv7: Networks',
+    name: 'Cisco Certified Network Associate (CCNA) - Introduction to Networks',
     issuer: 'Cisco',
-    dates: 'Issued Apr 2023',
   },
 ]
