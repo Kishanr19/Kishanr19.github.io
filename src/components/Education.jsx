@@ -1,5 +1,5 @@
-import { GraduationCap, Award } from 'lucide-react'
-import { education } from '../data.js'
+import { GraduationCap, Award, BadgeCheck } from 'lucide-react'
+import { education, certifications } from '../data.js'
 import { useReveal } from '../hooks/useReveal.js'
 
 export default function Education() {
@@ -76,6 +76,23 @@ export default function Education() {
                     </div>
                   </div>
                 ))}
+              </div>
+
+              <div className="mt-6 pt-6 border-t border-base-border">
+                <p className="text-sm font-medium text-ink mb-3">Certifications</p>
+                <div className="space-y-3">
+                  {certifications.map((cert) => (
+                    <div key={cert.name} className="flex items-start gap-2.5">
+                      <BadgeCheck size={15} className="text-accent shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-sm text-ink">{cert.name}</p>
+                        <p className="text-xs text-ink-faint mt-0.5">
+                          {cert.issuer} · {cert.dates}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

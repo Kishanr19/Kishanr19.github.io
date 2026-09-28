@@ -225,7 +225,14 @@ export const education = {
 }
 
 export const certifications = [
-  { name: "Dean's List Award", issuer: 'University of Essex', dates: 'Oct 2024 – Jul 2025' },
-  { name: 'CCNA: Routing and Switching', issuer: 'Cisco', dates: 'Oct 2023 – May 2024' },
-  { name: 'CCNA: Network Fundamentals', issuer: 'Cisco', dates: 'Oct 2022 – May 2023' },
+  {
+    name: 'Cisco Certified Network Associate: Routing and Switching (CCNA)',
+    issuer: 'Cisco',
+    dates: 'Issued Oct 2023 · Expires Jun 2034',
+  },
+  {
+    name: 'CCNAv7: Networks',
+    issuer: 'Cisco',
+    dates: 'Issued Apr 2023',
+  },
 ]
