@@ -1,5 +1,5 @@
-import { GraduationCap, Award, BadgeCheck } from 'lucide-react'
-import { education, certifications } from '../data.js'
+import { GraduationCap, Award } from 'lucide-react'
+import { education } from '../data.js'
 import { useReveal } from '../hooks/useReveal.js'
 
 export default function Education() {
@@ -61,9 +61,10 @@ export default function Education() {
               </div>
 
               <div className="mt-6 pt-6 border-t border-base-border space-y-4">
+                <p className="text-sm font-medium text-ink">Modules</p>
                 {education.modules.map((group) => (
                   <div key={group.year}>
-                    <p className="text-sm font-medium text-ink mb-2">{group.year}</p>
+                    <p className="text-xs font-medium text-ink-soft mb-2">{group.year}</p>
                     <div className="flex flex-wrap gap-1.5">
                       {group.items.map((item) => (
                         <span
@@ -76,23 +77,6 @@ export default function Education() {
                     </div>
                   </div>
                 ))}
-              </div>
-
-              <div className="mt-6 pt-6 border-t border-base-border">
-                <p className="text-sm font-medium text-ink mb-3">Certifications</p>
-                <div className="space-y-3">
-                  {certifications.map((cert) => (
-                    <div key={cert.name} className="flex items-start gap-2.5">
-                      <BadgeCheck size={15} className="text-accent shrink-0 mt-0.5" />
-                      <div>
-                        <p className="text-sm text-ink">{cert.name}</p>
-                        <p className="text-xs text-ink-faint mt-0.5">
-                          {cert.issuer} · {cert.dates}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
               </div>
             </div>
           </div>
