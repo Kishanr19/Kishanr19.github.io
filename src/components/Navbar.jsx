@@ -21,7 +21,7 @@ export default function Navbar() {
         <a
           href="#top"
           className="font-display font-semibold text-lg tracking-tight text-ink"
-          aria-label="Kishan Ravikumar — back to top"
+          aria-label="Kishan Ravikumar, back to top"
         >
           KR
         </a>

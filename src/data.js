@@ -81,7 +81,7 @@ export const projects = [
       'Produced Excel-based analysis of Adidas US sales and Milwaukee property sales using pivot tables, XLOOKUP, statistical hypothesis testing, and interactive slicers for drill-down exploration',
     ],
     outcome:
-      'Delivered four end-to-end analytical workflows — a relational database with 20+ validated queries, a live-API ETL pipeline, a predictive ML model, and multiple published Tableau/Excel dashboards — turning disconnected raw datasets into structured, query-ready, decision-ready outputs.',
+      'Delivered four end-to-end analytical workflows - a relational database with 20+ validated queries, a live-API ETL pipeline, a predictive ML model, and multiple published Tableau/Excel dashboards - turning disconnected raw datasets into structured, query-ready, decision-ready outputs.',
     tech: ['Python', 'PostgreSQL', 'SQLAlchemy', 'REST API', 'Tableau', 'Pandas', 'scikit-learn', 'Excel'],
     github: 'https://github.com/Kishanr19/Commercial-Customer-Intelligence-Analytics-Platform-',
     demo: null,
@@ -98,7 +98,7 @@ export const projects = [
       'Used Git and GitHub with CI/CD to validate every change before integration, coordinating delivery across a 5-person team under hackathon time constraints',
     ],
     outcome:
-      'Delivered a fully functional, end-to-end application that automated a previously manual, error-prone grading process, with robust input validation and test coverage on every pipeline stage — completed and shipped within the hackathon deadline.',
+      'Delivered a fully functional, end-to-end application that automated a previously manual, error-prone grading process, with robust input validation and test coverage on every pipeline stage - completed and shipped within the hackathon deadline.',
     tech: ['Java', 'JUnit', 'Git', 'CI/CD', 'Agile'],
     github: 'https://github.com/Kishanr19/Automated-Grade-Calculation-Validation-System',
     demo: null,
@@ -123,7 +123,7 @@ export const projects = [
       'https://github.com/Kishanr19/PacRun-A-Java-Based-Exploration-of-Object-Oriented-Game-Architecture-with-Advanced-State-Management/blob/main/CE301%20Final%20Report.pdf',
   },
   {
-    name: 'Virtual Café — Concurrent Client-Server System',
+    name: 'Virtual Café - Concurrent Client-Server System',
     description:
       'Modelling real-world resource contention needed a system where multiple clients compete for shared resources at once, not a simplified single-user demo. A multi-threaded Java client-server application simulating a real-time café where multiple customers order concurrently and a central server processes each request through a synchronized workflow.',
     features: [
