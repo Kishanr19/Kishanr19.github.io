@@ -114,7 +114,7 @@ export const projects = [
       'Optimised real-time collision detection using an AABB approach with selective testing, HashSet-backed entity storage, and conditional logic gating to maintain stable performance under Java Swing\'s event-driven model',
       'Engineered a custom real-time rendering and game-loop pipeline directly on Java Swing with no external game engine, handling timed updates, input, and rendering within a single event-driven cycle',
       'Implemented defensive resource loading for the audio system, with error handling and fallback behaviour to prevent crashes from missing or corrupt asset files',
-      'Wrote 37 JUnit tests across 4 test classes to validate core game logic, covering a ~2,900-line core game engine and ~1,800-line UI and menu system',
+      'Wrote 37 JUnit tests across 4 test classes covering a 2,900-line core game engine and 1,800-line UI and menu system, achieving a 100% pass rate',
       'Validated gameplay and usability through structured playtesting with 8+ participants, iterating on difficulty progression and engagement based on feedback',
     ],
     outcome:
