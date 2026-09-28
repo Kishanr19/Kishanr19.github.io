@@ -226,11 +226,11 @@ export const education = {
 
 export const certifications = [
   {
-    name: 'Cisco Certified Network Associate (CCNA) - Routing and Switching',
+    name: 'Cisco Certified Network Associate (CCNA) - Introduction to Networks',
     issuer: 'Cisco',
   },
   {
-    name: 'Cisco Certified Network Associate (CCNA) - Introduction to Networks',
+    name: 'Cisco Certified Network Associate (CCNA) - Routing and Switching',
     issuer: 'Cisco',
   },
 ]
