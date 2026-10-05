@@ -16,6 +16,8 @@ export const experience = [
     company: 'University of Essex',
     dates: 'Jan 2023 – Jul 2025',
     points: [
+      'Administered user accounts, access and permissions across business systems, including CRM and Active Directory, and supported users with login, access and account-related problems',
+      'Logged support queries, actions and resolutions, escalating more complex incidents to technical staff and coordinating further support when issues could not be resolved at first line',
       'Audited and consolidated a 1,000+ student dataset in Excel using VLOOKUPs and PivotTables, resolving duplicate records and producing weekly management dashboards',
       'Tested functionality for an AI-driven student support chatbot, presenting performance updates to steering committees',
       'Maintained implementation timelines and milestone trackers for an automated room-booking rollout',
