@@ -12,7 +12,7 @@ export const profile = {
 
 export const experience = [
   {
-    title: 'Data and Operations Assistant',
+    title: 'Data and Operations Administrator',
     company: 'University of Essex',
     dates: 'Jan 2023 – Jul 2025',
     points: [

@@ -11,7 +11,7 @@ export default function About() {
           <p>
             Recent BSc Computer Science graduate with a strong foundation in data analysis,
             software development and automation, built through hands-on academic and professional
-            experience. As a Data and Operations Assistant, I produced management reporting,
+            experience. As a Data and Operations Administrator, I produced management reporting,
             validated and maintained data accuracy, investigated discrepancies, and supported
             stakeholders through system rollouts, using Excel, SQL and Python to automate
             recurring workflows and resolve data-quality issues.
