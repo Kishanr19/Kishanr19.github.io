@@ -72,7 +72,7 @@ export const experience = [
 
 export const projects = [
   {
-    name: 'Commercial & Customer Intelligence Analytics Platform',
+    name: 'Data Analytics (Data Modelling & Relational Architecture) Project',
     description:
       'A multi-tool analytics portfolio spanning database design, Python data science, and Tableau/Excel dashboarding, built to demonstrate a full analytical workflow from raw data to decision-ready insight rather than a single isolated technique. Covers a relational retail database, a live-API Python pipeline, a machine learning model, and multiple Excel/Tableau dashboards across real-world datasets including retail sales, employee attrition, and property sales.',
     features: [
