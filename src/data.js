@@ -12,19 +12,20 @@ export const profile = {
 
 export const experience = [
   {
-    title: 'Data and Operations Administrator',
+    title: 'Outreach Ambassador (Data Analytics Assistant)',
     company: 'University of Essex',
     dates: 'Jan 2023 – Jul 2025',
     points: [
+      'Modelled raw student source data and consolidated datasets of 1,000+ records in Excel using VLOOKUPs and PivotTables, resolving duplicate records and schema inconsistencies to achieve 100% data quality alignment and producing weekly management dashboards',
+      'Analysed operational data and workflows across systems, proactively identifying and resolving recurring processing issues and data anomalies before they compounded, improving data quality and supporting accurate downstream reporting',
+      'Evaluated data requirements alongside a 5-person project team, delivering technical presentations to communicate system resolutions to 3 distinct departments',
       'Administered user accounts, access and permissions across business systems, including CRM and Active Directory, and supported users with login, access and account-related problems',
       'Logged support queries, actions and resolutions, escalating more complex incidents to technical staff and coordinating further support when issues could not be resolved at first line',
-      'Audited and consolidated a 1,000+ student dataset in Excel using VLOOKUPs and PivotTables, resolving duplicate records and producing weekly management dashboards',
       'Tested functionality for an AI-driven student support chatbot, presenting performance updates to steering committees',
       'Maintained implementation timelines and milestone trackers for an automated room-booking rollout',
       'Mapped enrolment workflows to support the transition from paper forms to a digital portal',
       'Managed CRM data for 500+ applicants, tracking recruitment pipeline and ensuring enrolment accuracy',
       'Coordinated a 300+ attendee STEM event, leading cross-functional teams and managing event logistics, project timelines, and resource allocation',
-      'Identified and resolved data anomalies and schema inconsistencies proactively, applying a methodical approach to catching issues before they compounded downstream',
     ],
   },
   {
