@@ -76,6 +76,8 @@ export const projects = [
     description:
       'A multi-tool analytics portfolio spanning database design, Python data science, and Tableau/Excel dashboarding, built to demonstrate a full analytical workflow from raw data to decision-ready insight rather than a single isolated technique. Covers a relational retail database, a live-API Python pipeline, a machine learning model, and multiple Excel/Tableau dashboards across real-world datasets including retail sales, employee attrition, and property sales.',
     features: [
+      'Modelled raw data infrastructure by designing a relational PostgreSQL schema and writing 20+ analytical SQL queries with multi-table joins and subqueries to extract core business logic',
+      'Engineered an automated Python ETL pipeline leveraging a SQLAlchemy ORM layer to retrieve, process, and ingest live-API options datasets into a query-ready relational database',
       'Designed a relational PostgreSQL schema (BicyclesDB) for a bike retailer\'s sales and inventory system, then wrote 20+ SQL queries using multi-table joins, subqueries, aggregation, and grouping to analyse revenue, customer behaviour, inventory, and staff performance',
       'Built a Python ETL pipeline that retrieves live S&P 500 options data via the Tradier API, processes and calculates trading ranges with pandas, and loads results into PostgreSQL through a SQLAlchemy ORM layer',
       'Developed a logistic regression model in Jupyter to predict employee churn, including full exploratory data analysis with Matplotlib/Seaborn and model evaluation via scikit-learn cross-validation',
