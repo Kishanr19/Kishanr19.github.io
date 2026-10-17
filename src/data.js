@@ -12,7 +12,18 @@ export const profile = {
 
 export const experience = [
   {
-    title: 'Outreach Ambassador (Data Analytics Assistant)',
+    title: 'Data and Operations Analyst',
+    company: 'Esso LTD',
+    dates: 'Jun 2026 – Aug 2026',
+    points: [
+      'Automated recurring performance reporting using Python and Excel, consolidating transactional data into structured KPI reports and reducing manual preparation time by 35%',
+      'Analysed 2,000+ transactions to identify revenue, demand and product-performance trends, translating findings into clear recommendations for staffing, stock and commercial decision-making',
+      'Cleaned and reconciled point-of-sale and financial datasets, identifying 12 reporting discrepancies and implementing validation checks to improve the accuracy of downstream reporting',
+      'Built an Excel performance dashboard tracking revenue, margin, stock turnover and underperforming categories, enabling management to monitor trends and identify operational improvement opportunities',
+    ],
+  },
+  {
+    title: 'Outreach Ambassador (Data Assistant)',
     company: 'University of Essex',
     dates: 'Jan 2023 – Jul 2025',
     points: [

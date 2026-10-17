@@ -9,25 +9,13 @@ export default function About() {
         <h2 className="font-display font-semibold text-2xl tracking-tight mb-8">About</h2>
         <div className="max-w-2xl space-y-4 text-ink-soft leading-relaxed">
           <p>
-            I'm a BSc Computer Science graduate (2:1) from the University of Essex, with a
-            background in data analytics, database development and automation, supported by
-            professional experience and continued independent technical projects.
-          </p>
-          <p>
-            As a Data Analytics Assistant at the University of Essex, I worked with operational
-            datasets, investigated data inconsistencies and supported management reporting using
-            Excel, SQL and Python. My work involved improving data accuracy, streamlining
-            recurring processes and translating technical findings into actionable information
-            for stakeholders, strengthening both my analytical capabilities and understanding of
-            how data supports operational decision-making.
-          </p>
-          <p>
-            Since graduating, I've continued building practical data engineering capabilities
-            through independent projects involving automated Python ETL pipelines, REST API
-            integration, PostgreSQL database modelling, SQLAlchemy and data validation. Beyond
-            using these technologies, I've focused on understanding how data moves between
-            systems, how to structure it effectively and how to maintain its reliability for
-            downstream analysis.
+            Recent BSc Computer Science graduate with experience as a Data and Operations Analyst
+            and in data-focused operational roles, analysing transactional and CRM data,
+            automating performance reporting and building dashboards using Excel, SQL and
+            Python. Experienced in cleaning and processing datasets, identifying performance and
+            consumer trends, and translating findings into clear insights and recommendations for
+            stakeholders. Now seeking an entry level data and analytics role where I can apply
+            this experience.
           </p>
           <p>
             I'm now pursuing graduate and entry-level opportunities in data analytics and data
