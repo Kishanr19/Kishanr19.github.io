@@ -14,8 +14,7 @@ export default function About() {
             automating performance reporting and building dashboards using Excel, SQL and
             Python. Experienced in cleaning and processing datasets, identifying performance and
             consumer trends, and translating findings into clear insights and recommendations for
-            stakeholders. Now seeking an entry level data and analytics role where I can apply
-            this experience.
+            stakeholders.
           </p>
           <p>
             I'm now pursuing graduate and entry-level opportunities in data analytics and data
