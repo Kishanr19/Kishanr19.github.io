@@ -20,6 +20,10 @@ export const experience = [
       'Analysed 2,000+ transactions to identify revenue, demand and product-performance trends, translating findings into clear recommendations for staffing, stock and commercial decision-making',
       'Cleaned and reconciled point-of-sale and financial datasets, identifying 12 reporting discrepancies and implementing validation checks to improve the accuracy of downstream reporting',
       'Built an Excel performance dashboard tracking revenue, margin, stock turnover and underperforming categories, enabling management to monitor trends and identify operational improvement opportunities',
+      'Provided day-to-day technical support to team leads, investigating 12 system and data discrepancies to their root cause and writing up each fix clearly',
+      'Built advanced Excel verification models that ran automated quality control checks, keeping data accurate, complete and in line with compliance standards across all outgoing reports',
+      'Advised internal stakeholders on bringing interactive digital tools into team training, recommending technical resources that sped up onboarding for new employees and helped them get to grips with new platforms faster',
+      'Worked closely with operations leads and technical teams to spot where daily processes were slowing people down, refine report structures and make day-to-day work easier for the team',
     ],
   },
   {
@@ -37,6 +41,8 @@ export const experience = [
       'Mapped enrolment workflows to support the transition from paper forms to a digital portal',
       'Managed CRM data for 500+ applicants, tracking recruitment pipeline and ensuring enrolment accuracy',
       'Coordinated a 300+ attendee STEM event, leading cross-functional teams and managing event logistics, project timelines, and resource allocation',
+      'Cleaned up CRM data for 1,000+ undergraduate and school staff records, working with the university\'s IT team to remove duplicates and fix wrong contact details so the outreach team\'s reports were accurate',
+      'Collaborated with outreach staff and senior stakeholders to keep SharePoint records of outreach events up to date, sharing clear summaries of attendance and feedback to improve future sessions',
     ],
   },
   {
@@ -58,6 +64,9 @@ export const experience = [
       'Built and iterated functional prototypes against defined requirements, refining workflow logic and application features before implementing the final solution',
       'Integrated REST APIs and used regression testing to validate functionality, applying AI tools such as Google Gemini to explore implementation approaches and troubleshoot issues before deployment',
       'Led Agile project delivery as Scrum Master for a 6-person team, using Jira to prioritise development work, coordinate implementation and drive resolution of project blockers',
+      'Explained complex technical issues, software updates and workflow changes to non-technical team members in simple, practical terms, helping teams adopt new tools and processes',
+      'Performed targeted diagnostic checks using Python to trace data errors, ensuring digital outputs and user-facing applications remained accurate and reliable',
+      'Maintained organised technical records and error logs to document fixes, maintain information consistency, and prevent recurring technical issues across project workflows',
     ],
   },
   {
