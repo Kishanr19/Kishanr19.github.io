@@ -13,7 +13,7 @@ export default function About() {
             operations, software engineering and process automation.
           </p>
           <p>
-            My experience as a Data &amp; Operations Analyst includes sales performance reporting,
+            My experience as a Data Operations Support Analyst includes sales performance reporting,
             financial reconciliation, data validation and business intelligence. Skilled in using
             Python, SQL and Excel to analyse complex datasets, investigate discrepancies,
             automate reporting workflows and translate operational data into actionable insights

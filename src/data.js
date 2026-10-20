@@ -12,7 +12,7 @@ export const profile = {
 
 export const experience = [
   {
-    title: 'Data and Operations Analyst',
+    title: 'Data Operations Support Analyst',
     company: 'Esso LTD',
     dates: 'Jun 2026 – Aug 2026',
     points: [
